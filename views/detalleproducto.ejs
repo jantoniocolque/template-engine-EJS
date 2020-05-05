@@ -2,12 +2,14 @@
 <html lang="en">
 <%- include('./partials/head')%>
 <body>
-<%- include('./partials/header') %>
-<div>
-<% for(producto of productos) {%>
-    <p><%= producto.name %></p>
- <% } %>
-</div>
-<%- include('./partials/footer')%>
+    <%- include('./partials/header') %>
+        <div>
+            <% for(producto of productos) {%>
+                <p><%= producto.name %></p>
+                <p><%= producto.price %></p>
+                <img src="/images/<%= producto.image %>" alt="">
+            <% } %>
+        </div>
+    <%- include('./partials/footer')%>
 </body>
 </html>
