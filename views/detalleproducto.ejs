@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+<%- include('./partials/header') %>
+<div>
+<% for(producto of productos) {%>
+    <p><%= producto.name %></p>
+ <% } %>
+</div>
+<%- include('./partials/footer')%>
+</body>
+</html>
